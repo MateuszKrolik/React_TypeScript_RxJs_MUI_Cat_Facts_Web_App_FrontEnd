@@ -1,14 +1,16 @@
 import React from 'react';
 import CatFactCard from './CatFactCard';
 import { useObservableState } from 'observable-hooks';
-import { fetchCatFacts } from '../services/catFactsService';
 import { Grid } from '@mui/material';
 import { startWith } from 'rxjs';
 import { mockData } from '../util/mockData';
+import { useCatFactsService } from '../hooks/useCatFactsService';
+
 
 const CatFactGrid: React.FC = () => {
+  const catFactsService = useCatFactsService();
   const [catFacts] = useObservableState(
-    () => fetchCatFacts().pipe(startWith(mockData)),
+    () => catFactsService.fetchCatFacts().pipe(startWith(mockData)),
     [] as { user: string; fact: string }[]
   );
 

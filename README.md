@@ -132,6 +132,10 @@ You should also provide your Reactive BackEnd's URL as an environment variable i
 - [x] Reactive Programming via:
   - [x] RxJs
   - [x] Observable-Hooks Library
+- [x] Design Patterns such as:
+  - [x] Observer(Publish/Subscribe) via RxJs
+  - [x] Repository (via Interface Services)
+  - [x] Singleton (via Globally Shared Service Instance)
 - [x] Best Practices such as:
   - [x] Repository Design Pattern
   - [x] Loose-Coupling via Reusable Stateful and Stateless Components & Props
@@ -139,6 +143,8 @@ You should also provide your Reactive BackEnd's URL as an environment variable i
   - [x] Environment Variables
   - [x] Responsive Styling
   - [x] Seed/Placeholder data
+  - [x] Context API App-Wide State (instead of Prop-Drilling)
+  - [x] Loose-Coupling (via InversifyJs Library)
 - [x] CI/CD & Infrastructure-as-Code (IaC):
   - [x] Azure Static Web Apps
   - [x] GitHub Actions

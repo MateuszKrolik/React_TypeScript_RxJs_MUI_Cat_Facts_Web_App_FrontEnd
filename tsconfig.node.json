@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "lib": ["ES2023"],
+    "types": ["reflect-metadata"], // for inversify
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -16,7 +17,11 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+
+    /* Decorators */
+    "experimentalDecorators": true, // for inversify
+    "emitDecoratorMetadata": true // for inversify
   },
   "include": ["vite.config.ts"]
 }
